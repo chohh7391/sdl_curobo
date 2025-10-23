@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "toml", "wheel", "ninja"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sdl_isaacsim"
+version = "0.0.1"
+description = "sdl_isaacsim"
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["robotics", "SDL"]
+authors = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+[tool.setuptools]
+package-dir = {
+    "curobo" = "src/curobo/src",
+    "cutamp" = "src/cuTAMP",
+    "sdl" = "src", 
+}
+
+[tool.setuptools.packages.find]
+include = ["curobo", "cutamp", "sdl"]
