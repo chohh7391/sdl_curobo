@@ -1,4 +1,4 @@
-# SDL - Isaac Sim
+# SDL - cuTAMP
 
 [![IsaacSim](https://img.shields.io/badge/IsaacSim-5.0.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/index.html)
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
@@ -13,8 +13,8 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
 - Create conda environment
 
   ```
-  conda create -n sdl_isaacsim python=3.11
-  conda activate sdl_isaacsim
+  conda create -n sdl_cutamp python=3.11
+  conda activate sdl_cutamp
   ```
 
 - Installation of dependencies
@@ -33,12 +33,12 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
   - git clone repository
   ```
   cd ~/
-  git clone https://github.com/chohh7391/sdl_isaacsim.git
+  git clone https://github.com/chohh7391/sdl_cutamp.git
   ```
 
   - Install cutamp dependencies
   ```
-  cd ~/sdl_isaacsim/src/cuTAMP
+  cd ~/sdl_cutamp/src/cuTAMP
   pip install -e .
 
   sudo apt install git-lfs
@@ -47,7 +47,7 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
 
   - Install curobo dependencies
   ```
-  cd ~/sdl_isaacsim/src/curobo
+  cd ~/sdl_cutamp/src/curobo
   python -m pip install tomli wheel ninja
   
   # This can take up to 20 minutes to install
@@ -59,19 +59,19 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
   - cutamp demo
 
   ```
-  conda activate sdl_isaacsim
+  conda activate sdl_cutamp
   cutamp-demo
   ```
 
-  - isaacsim with curobo
+  - curobo with isaacsim
   
   ```
-  conda activate sdl_isaacsim
+  conda activate sdl_cutamp
   python scripts/pick_and_place.py
   ```
 
   ```
-  conda activate sdl_isaacsim
+  conda activate sdl_cutamp
   python scripts/cube_stacking.py
   ```
   

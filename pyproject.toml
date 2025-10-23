@@ -3,9 +3,9 @@ requires = ["setuptools", "toml", "wheel", "ninja"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sdl_isaacsim"
+name = "sdl_cutamp"
 version = "0.0.1"
-description = "sdl_isaacsim"
+description = "sdl_cutamp"
 readme = "README.md"
 requires-python = ">=3.11"
 keywords = ["robotics", "SDL"]
@@ -15,5 +15,5 @@ classifiers = [
 ]
 
 [tool.setuptools]
-package-dir = {"sdl" = "src/sdl"}
+package-dir = {"sdl" = "src/sdl", "cutamp" = "src/cuTAMP/cutamp"}
 packages = ["sdl"]
