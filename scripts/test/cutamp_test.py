@@ -18,6 +18,7 @@ from cutamp.scripts.utils import (
     get_tetris_tuned_constraint_to_mult,
 )
 
+
 def load_demo_env(name: str) -> TAMPEnvironment:
     if name.startswith("tetris_"):
         num_blocks = int(name.split("tetris_")[-1])
