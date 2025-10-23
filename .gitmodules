@@ -1,0 +1,6 @@
+[submodule "src/curobo"]
+	path = src/curobo
+	url = https://github.com/NVlabs/curobo
+[submodule "src/cuTAMP"]
+	path = src/cuTAMP
+	url = https://github.com/NVlabs/cuTAMP
