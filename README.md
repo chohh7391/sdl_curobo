@@ -54,6 +54,12 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
   python -m pip install -e .[isaacsim] --no-build-isolation
   ```
 
+  - Install sdl dependencies
+  ```
+  cd ~/sdl_cutamp
+  pip install -e .
+  ```
+
 ## Getting Started
 
   - cutamp demo
