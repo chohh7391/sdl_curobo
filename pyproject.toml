@@ -15,11 +15,5 @@ classifiers = [
 ]
 
 [tool.setuptools]
-package-dir = {
-    "curobo" = "src/curobo/src",
-    "cutamp" = "src/cuTAMP",
-    "sdl" = "src", 
-}
-
-[tool.setuptools.packages.find]
-include = ["curobo", "cutamp", "sdl"]
+package-dir = {"sdl" = "src/sdl"}
+packages = ["sdl"]
