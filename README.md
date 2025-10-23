@@ -57,12 +57,14 @@ This project utilizes cuTAMP within Isaac Sim to perform **S**elf-**D**riving **
 ## Getting Started
 
   - cutamp demo
+
   ```
   conda activate sdl_isaacsim
   cutamp-demo
   ```
 
   - isaacsim with curobo
+  
   ```
   conda activate sdl_isaacsim
   python scripts/pick_and_place.py
