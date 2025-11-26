@@ -1,12 +1,12 @@
 # SDL - curobo
 
-[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.0.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/5.0.0/index.html)
+[![IsaacSim](https://img.shields.io/badge/IsaacSim-5.1.0-silver.svg)](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/index.html)
 [![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://docs.python.org/3/whatsnew/3.11.html)
 [![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/22.04/)
 
 ## Overview
 
-This project utilizes curobo within Isaac Sim to perform **S**elf-**D**riving **L**aboratories
+This project utilizes curobo within Isaac Sim to perform simple **pick and place** & **cube stack**
 
 ## Installation
 
@@ -17,57 +17,26 @@ This project utilizes curobo within Isaac Sim to perform **S**elf-**D**riving **
   conda activate sdl_curobo
   ```
 
-- Installation of dependencies
+- Install dependencies
   
-  - Install a CUDA-enabled PyTorch 2.7.0 build for CUDA 12.8:
-  ```
+  ```bash
+  pip install --upgrade pip
+  pip install "isaacsim[all,extscache]==5.1.0" --extra-index-url https://pypi.nvidia.com
   pip install torch==2.7.0 torchvision==0.22.0 torchaudio --index-url https://download.pytorch.org/whl/cu128
-  ```
 
-  - Install Isaac Sim pip packages:
-
-  ```
-  pip install "isaacsim[all,extscache]==5.0.0" --extra-index-url https://pypi.nvidia.com
-  ```
-
-  - git clone repository
-  ```
-  cd ~/
-  git clone https://github.com/chohh7391/sdl_curobo.git
-  ```
-
-  - Install cutamp dependencies
-  ```
-  cd ~/sdl_curobo/src/cuTAMP
-  pip install -e .
-
-  sudo apt install git-lfs
-  git lfs install
-  ```
-
-  - Install curobo dependencies
-  ```
-  cd ~/sdl_curobo/src/curobo
+  cd ~/sdl_curobo/src
+  git clone https://github.com/NVlabs/curobo.git
   python -m pip install tomli wheel ninja
-  
+
+  cd curobo
   # This can take up to 20 minutes to install
   python -m pip install -e .[isaacsim] --no-build-isolation
-  ```
 
-  - Install sdl dependencies
-  ```
   cd ~/sdl_curobo
   pip install -e .
   ```
 
 ## Getting Started
-
-  - cutamp demo
-
-  ```
-  conda activate sdl_curobo
-  cutamp-demo
-  ```
 
   - curobo with isaacsim
   
